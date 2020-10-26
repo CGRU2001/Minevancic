@@ -1,0 +1,114 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+div#start{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background: #5FDD9B;
+    flex-direction: column;
+    color: white;
+
+}
+div#start button{
+    box-sizing: border-box;
+    height: 50px;
+    width: 300px;
+    display: table;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.55);
+    transition: background .5s;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+div#start button#howTo{
+    height: 50px;
+    width: 250px;
+}
+div#start button:hover{
+
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
+    color: white;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(0, 0, 0, 0.55);
+}
+
+div#game{
+    height: 100vh;
+    display: none;
+    background: #5FDD9B;
+    color: white;
+
+}
+div#game #beta{
+    display: none;
+}
+div#game div.timer{
+    position: absolute;
+}
+div#game div.content{
+    display: flex;
+    align-items:center;
+    flex-flow: column;
+    align-items:center;
+    justify-content: center;
+}
+div#game h2{
+    padding-top: 10%;
+    color: white;
+}
+div#game table{
+    margin-top: 10%;
+    border: 1px solid white;
+
+}
+
+div#game table td{
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+    color: white;
+    fill: white;
+}
+.controles{
+
+    padding: 5rem;
+}
+.controles button{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.55);
+    width: 40px;
+    height: 40px;
+    transition: background .5s;
+    margin: 0 1rem;
+
+}
+.controles button#left{
+    transform: rotate(-180deg);
+}
+.controles button#up{
+    transform: rotate(-90deg);
+}
+.controles button#reload{
+    display: none;
+}
+.controles button#next{
+    display: none;
+}
+.controles button:hover{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
+    color: white;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(0, 0, 0, 0.55);
+}
