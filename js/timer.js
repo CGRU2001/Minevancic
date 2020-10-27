@@ -28,6 +28,15 @@ function count(){
     }
 
 
+
+    if(round < 10){
+        if(timeOut()){
+            openLoseModal();
+            inhabilitarControles(false);
+            stopChrono();
+        }
+    }
+
     document.getElementById('time').innerHTML = tmpminutes+''+minutes+':'+tmpseconds+seconds;
 
 
@@ -47,4 +56,10 @@ function resetChrono(){
 }
 function getTime(){
     return document.getElementById('time').innerHTML;
+}
+function timeOut(){
+    if(seconds  < round * 10){
+        return false;
+    }
+    return true;
 }

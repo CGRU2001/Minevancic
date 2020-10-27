@@ -8,38 +8,56 @@ function checkVictory() {
     return false;
 }
 
-function newRound(){
+function newRound() {
     x = 0;
     y = 0;
     round++;
     removeColor();
     removeRover();
-    tablero.remove();
-    tablero.fill(round);
+    remove();
+    fill(round);
     document.getElementById('round').innerHTML = 'Round ' + round;
     habilitarControles();
     document.getElementById('status').innerHTML = 'Playing';
-    repaint(0,0);
+    repaint(0, 0);
     resetChrono();
 }
-function retry(){
+function retry() {
     x = 0;
     y = 0;
-    tablero.remove();
-    tablero.fill(round);
+    remove();
+    fill(round);
     removeColor();
     document.getElementById('round').innerHTML = 'Round ' + round;
-    repaint(0,0);
+    repaint(0, 0);
     habilitarControles();
     document.getElementById('status').innerHTML = 'Playing';
     resetChrono();
 }
 
-function openWinModal(){
+function win() {
+    if(checkVictory()){
+        document.getElementById('status').innerHTML = 'You win!';
+        inhabilitarControles(true);
+        openWinModal();
+        stopChrono();
+    }
+
+}
+function lose() {
+    document.getElementById('status').innerHTML = 'You lose';
+    document.getElementById(x + '' + y).style.background = 'red';
+    document.getElementById(x + '' + y).innerHTML = '<img src="img/explosion.png" id="exploted" alt="exploted" width="40px" height="40px">';
+    openLoseModal();
+    inhabilitarControles(false);
+    stopChrono();
+}
+
+function openWinModal() {
     calcSnc();
     $('#winModal').modal('show');
 }
-function openLoseModal(){
+function openLoseModal() {
     $('#loseModal').modal('show');
 }
 

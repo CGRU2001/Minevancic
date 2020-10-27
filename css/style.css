@@ -79,6 +79,9 @@ div#game table td{
     color: white;
     fill: white;
 }
+div#game table td#00{
+    border-bottom: none;
+}
 .controles{
 
     padding: 5rem;

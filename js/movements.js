@@ -34,3 +34,20 @@ function up() {
 
 }
 
+window.addEventListener("keydown", function (event) {
+    if(event.key == 'w'){
+        if(!comprobarPosiciones(x, y)){
+            up();
+        }
+        
+    }if(event.key == 'd'){
+        if(!comprobarPosiciones(x, y)){
+            right();
+        }
+    }if(event.key == 'a'){
+        if(!comprobarPosiciones(x, y)){
+            left();
+        }
+    }
+},false);
+
