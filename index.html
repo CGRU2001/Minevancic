@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <title>Minevancic - Introduction</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css"/>
+<meta charset="UTF-8">
+<title>Minevancic - Introduction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <div id="start">
         <h1>Minevancic</h1>
         <button id="play" onclick="hide()">play</button>
-        <button type="button" class="btn btn-info btn-lg" id="howTo" data-toggle="modal" data-target="#howToModal">How to play</button>
+        <button type="button" class="btn btn-info btn-lg" id="howTo" data-toggle="modal" data-target="#howToModal">How
+            to play</button>
     </div>
     <div id="game">
         <div class="timer">
             <span>Time elapsed: </span>
             <span id="time">00:00</span>
-            <br/>
+            <br />
             <span id="round"></span>
-            <br/>
-            <span id="beta">Minevancic developer preview 1.0.0. Use console to debug program</span>
+
         </div>
         <div class="container">
             <div class="content">
@@ -85,11 +87,15 @@
                 </table>
 
                 <div class="controles">
+
+
                     <button id="left" onclick="left()">&#10140;</button>
                     <button id="up" onclick="up()">&#10140;</button>
+                    <button id="right" onclick="right()">&#10140;</button>
+
                     <button id="reload" onclick="regen()">&#8634;</button>
                     <button id="next" onclick="newRound()">&#10140;</button>
-                    <button id="right" onclick="right()">&#10140;</button>
+
                 </div>
 
 
@@ -111,7 +117,7 @@
                 <div class="modal-body">
                     <ul>
                         <li>You are a rover, and you have to dodge all the mines until you reach the goal</li>
-                        <li>You can only move sideways and upwards, so be careful where you put your feet</li>
+                        <li>You can only move sideways and upwards, so be careful where you put your feet. Downswards are only alloweb with the keyboard</li>
                         <li>You have to try to be fast, the faster you are, the higher your score</li>
                         <li>You can press the 'Playing' label for one time to get a hint</li>
                     </ul>
@@ -156,7 +162,7 @@
                 </div>
                 <div class="modal-body">
                     <p id="cause">Try harder</p>
-                    
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Try again</button>
@@ -171,15 +177,22 @@
 
 </body>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/helper.js"></script>
-    <script type="text/javascript" src="js/score.js"></script>
-    <script type="text/javascript" src="js/game.js"></script>
-    <script type="text/javascript" src="js/movements.js"></script>
-    <script type="text/javascript" src="js/Tablero.js"></script>
-    <script type="text/javascript" src="js/timer.js"></script>
-    <script type="text/javascript" src="js/dev.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/helper.js"></script>
+<script type="text/javascript" src="js/score.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/movements.js"></script>
+<script type="text/javascript" src="js/Tablero.js"></script>
+<script type="text/javascript" src="js/timer.js"></script>
+<script type="text/javascript" src="js/dev.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
 </html>
