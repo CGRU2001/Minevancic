@@ -34,6 +34,17 @@ function up() {
 
 }
 
+function down() {
+    if (x != 0) {
+        x--;
+        repaint(x, y);
+        lastMov = 'down';
+    }else{
+        blink();
+    }
+
+}
+
 window.addEventListener("keydown", function (event) {
     if(event.key == 'w'){
         if(!comprobarPosiciones(x, y)){
@@ -47,6 +58,11 @@ window.addEventListener("keydown", function (event) {
     }if(event.key == 'a'){
         if(!comprobarPosiciones(x, y)){
             left();
+        }
+    }
+    if(event.key == 's'){
+        if(!comprobarPosiciones(x, y)){
+            down();
         }
     }
 },false);
