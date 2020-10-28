@@ -46,9 +46,7 @@ div#game{
     color: white;
 
 }
-div#game #beta{
-    display: none;
-}
+
 div#game div.timer{
     position: absolute;
 }
