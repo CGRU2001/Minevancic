@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 div#start{
     height: 100vh;
