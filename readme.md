@@ -4,7 +4,7 @@ Minevancic is a (little) game created for an international project, in which ant
 
 ## Installation
 
-Clone this repo and clone into your server
+Clone this repo in your server
 
 ## Usage
 
