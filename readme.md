@@ -23,4 +23,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-This project are under [MIT](https://github.com/CGRU2001/Compilador/blob/github.com/CGRU2001/Minevancic.git/LICENSE) License
+This project are under [MIT](https://github.com/CGRU2001/Minevancic/blob/master/LICENSE) License
