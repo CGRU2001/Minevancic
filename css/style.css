@@ -62,13 +62,13 @@ div#game h2{
     padding-top: 10%;
     color: white;
 }
-div#game table{
+div#game table#tablero{
     margin-top: 10%;
     border: 1px solid white;
 
 }
 
-div#game table td{
+div#game table#tablero td{
     border: 1px solid white;
     text-align: center;
     color: white;
@@ -82,7 +82,6 @@ div#game table td#00{
     border-bottom: none;
 }
 .controles{
-
     padding: 5rem;
 }
 .controles button{
@@ -102,6 +101,9 @@ div#game table td#00{
 .controles button#up{
     transform: rotate(-90deg);
 }
+.controles button#down{
+    transform: rotate(-270deg);
+}
 .controles button#reload{
     display: none;
 }
@@ -113,4 +115,7 @@ div#game table td#00{
     color: white;
     background: rgba(0, 0, 0, 0.55);
     border: 1px solid rgba(0, 0, 0, 0.55);
+}
+.ctr{
+    border: none;
 }

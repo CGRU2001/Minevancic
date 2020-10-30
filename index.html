@@ -29,7 +29,7 @@
         <div class="container">
             <div class="content">
                 <h2 id="status" onclick="hint()">Playing...</h2>
-                <table>
+                <table id="tablero">
                     <tr>
                         <td id="56">Exit</td>
                         <td id="55"></td>
@@ -88,14 +88,23 @@
 
                 <div class="controles">
 
-
-                    <button id="left" onclick="left()">&#10140;</button>
-                    <button id="up" onclick="up()">&#10140;</button>
-                    <button id="right" onclick="right()">&#10140;</button>
-
-                    <button id="reload" onclick="regen()">&#8634;</button>
-                    <button id="next" onclick="newRound()">&#10140;</button>
-
+                    <table class="ctr" >
+                        <tr>
+                            <td class="ctr"></td>
+                            <td class="ctr"><button id="up" onclick="up()">&#10140;</button></td>
+                            <td class="ctr"></td>
+                        </tr>
+                        <tr>
+                            <td class="ctr"><button id="left" onclick="left()">&#10140;</button></td>
+                            <td class="ctr"><button id="reload" onclick="regen()">&#8634;</button><button id="next" onclick="newRound()">&#10140;</td>
+                            <td class="ctr"><button id="right" onclick="right()">&#10140;</button></td>
+                        </tr>
+                        <tr>
+                            <td class="ctr"></td>
+                            <td class="ctr"><button id="down" onclick="down()">&#10140;</button></button></td>
+                            <td class="ctr"></td>
+                        </tr>
+                    </table>
                 </div>
 
 
@@ -117,7 +126,8 @@
                 <div class="modal-body">
                     <ul>
                         <li>You are a rover, and you have to dodge all the mines until you reach the goal</li>
-                        <li>You can only move sideways and upwards, so be careful where you put your feet. Downswards are only alloweb with the keyboard</li>
+                        <li>Be careful where you put your feet.</li>
+                        <li>You can use WASD keys</li>
                         <li>You have to try to be fast, the faster you are, the higher your score</li>
                         <li>You can press the 'Playing' label for one time to get a hint</li>
                     </ul>

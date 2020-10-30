@@ -65,5 +65,10 @@ window.addEventListener("keydown", function (event) {
             down();
         }
     }
+    if(event.key == 'r'){
+        if(comprobarPosiciones(x, y)){
+            retry();
+        }
+    }
 },false);
 
